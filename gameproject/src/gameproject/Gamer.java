@@ -68,7 +68,4 @@ public class Gamer {
 		return order;
 	}
 
-	public void setOrder(int order) {
-		this.order = order;
-	}
 }
