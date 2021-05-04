@@ -1,20 +1,24 @@
 package gameproject;
 
-public class GameManager implements CampaignService {
+public class GameManager implements GameService {
 
 	@Override
-	public void add(Campaign campaign) {
-		System.out.println("Kampanya Kaydedildi");
+	public void add(Game game) {
+		System.out.println("Oyun Kaydedildi" + game.name);
+		
 	}
 
 	@Override
-	public void update(Campaign campaign) {
-		System.out.println("Kampanya güncellendi");
+	public void delete(Game game) {
+		System.out.println("Oyun Silindi" + game.name);
+		
 	}
 
 	@Override
-	public void delete(Campaign campaign) {
-		System.out.println("Kampanya silindi");
+	public void update(Game game) {
+		System.out.println("Oyun Güncellendi" + game.name);
+		
 	}
 
+	
 }
